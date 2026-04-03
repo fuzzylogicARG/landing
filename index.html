@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Portal</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Portal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="portal-container">
+  <!-- AGE GATE -->
+  <div id="ageGate" class="age-gate">
+    <div class="age-gate-bg"></div>
 
-  <div class="glow-bg"></div>
+    <div class="age-card">
+      <div class="age-eyebrow">Restricted Access</div>
+      <h2>ARE YOU 18 OR OLDER?</h2>
+      <p>
+        This portal is intended for adults only. By continuing, you confirm that you are at least 18 years old
+        and that accessing external destinations is allowed under your local laws.
+      </p>
 
-  <h1 class="title">ENTER THE NETWORK</h1>
+      <div class="age-actions">
+        <button id="enterBtn" class="gate-btn gate-yes">Yes, Enter</button>
+        <button id="leaveBtn" class="gate-btn gate-no">No, Exit</button>
+      </div>
 
-  <p class="subtitle">
-    Private access point to our platforms  
-    Choose your path
-  </p>
-
-  <div class="buttons">
-
-    <a href="https://theoriginalcandid.com" class="btn primary">
-      TOC — Main Platform
-    </a>
-
-    <a href="https://thecandidverse.com" class="btn secondary">
-      TCV — Secondary Site
-    </a>
-
-    <a href="https://t.me/TOC_TCV_service_requests" class="btn outline">
-      Support / Requests
-    </a>
-
-    <a href="https://t.me/+f2RzJ3_9rxQxODAx" class="btn outline">
-      TCV Telegram
-    </a>
-
+      <div class="age-note">
+        Adult access confirmation required
+      </div>
+    </div>
   </div>
 
-</div>
+  <!-- MAIN PORTAL -->
+  <div class="portal-container">
+    <div class="glow-bg"></div>
+    <div class="grid-bg"></div>
 
+    <div class="portal-card">
+      <div class="topline"></div>
+
+      <div class="portal-inner">
+        <div class="eyebrow">Official Access Portal</div>
+
+        <h1 class="title">ENTER THE NETWORK</h1>
+
+        <p class="subtitle">
+          Private access point to our official platforms<br>
+          Select your destination below
+        </p>
+
+        <div class="buttons">
+          <a href="https://theoriginalcandid.com" class="btn primary" target="_blank" rel="noopener noreferrer">
+            TOC — Main Platform
+          </a>
+
+          <a href="https://thecandidverse.com" class="btn secondary" target="_blank" rel="noopener noreferrer">
+            TCV — Secondary Site
+          </a>
+
+          <a href="https://t.me/TOC_TCV_service_requests" class="btn outline" target="_blank" rel="noopener noreferrer">
+            Support / Requests
+          </a>
+
+          <a href="https://t.me/+f2RzJ3_9rxQxODAx" class="btn outline" target="_blank" rel="noopener noreferrer">
+            TCV Telegram
+          </a>
+        </div>
+
+        <div class="footer-note">
+          Official access hub
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
